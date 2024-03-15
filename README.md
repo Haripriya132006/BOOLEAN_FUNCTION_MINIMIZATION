@@ -17,6 +17,7 @@ Hardware – PCs, Cyclone II , USB flasher
 **Theory**
 
 **Logic Diagram**
+![Screenshot 2024-03-15 162844](https://github.com/Haripriya132006/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870747/5a50362c-f0e9-4ce9-b697-771a1d988ccf)
 
 **Procedure**
 
