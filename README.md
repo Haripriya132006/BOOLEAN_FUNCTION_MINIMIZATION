@@ -59,6 +59,7 @@ RegisterNumber:212223220030
 
 
 **RTL realization**
+
 ![Screenshot 2024-04-10 113856](https://github.com/Haripriya132006/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870747/6165149e-5930-46f3-97f2-4ef97728ce65)
 
 
