@@ -36,31 +36,41 @@ Hardware – PCs, Cyclone II , USB flasher
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 ```
-// Verilog model:Circuit with boolean expressions
-module ex02 (E,F,A,B,C,D);
-input A, B, C, D;
-output E,F;
-assign E = A || (B && C) || ((!B) && D);
-assign F=((!B) && C) || ( B && (!C) && (!D));
-endmodule
+/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. */
+module ex02(a,b,c,d,w,x,y,z,f1,f2); 
+input a,b,c,d,w,x,y,z;
+output f1,f2; 
+wire adash,bdash,cdash,ddash,ydash,p,q,r,s,t,u; 
+not(adash,a); not(bdash,b); not(cdash,c);
+ not(ddash,d);
+ and(p,bdash,ddash);
+ and(q,adash,b,d);
+ and(r,a,b,cdash); 
+ or(f1,p,q,r);
+ not(ydash,y); 
+ and(s,ydash,z); 
+ and(t,x,y);
+ and(u,w,y); 
+ or(f2,s,t,u);
+ endmodule
 ```
 Developed by:HARIPRIYA K 
 RegisterNumber:212223220030
 
 
 **RTL realization**
-![Screenshot 2024-03-15 155925](https://github.com/Haripriya132006/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870747/74688d94-34c2-4668-ab5a-ea3a6bdeff90)
+![Screenshot 2024-04-10 113856](https://github.com/Haripriya132006/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870747/6165149e-5930-46f3-97f2-4ef97728ce65)
 
 
 
 **RTL**
 **Timing Diagram**
 **Output:**
-![Screenshot 2024-03-15 160303](https://github.com/Haripriya132006/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870747/18eac204-35dd-4a05-83c1-d8fabe54f81d)
 
 
 
 
+![Screenshot 2024-04-10 114117](https://github.com/Haripriya132006/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870747/a1aacc77-a0d6-4887-8d75-f4e34f93b122)
 
 
 **Result:**
